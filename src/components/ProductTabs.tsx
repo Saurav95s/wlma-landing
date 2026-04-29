@@ -53,7 +53,7 @@ export default function ProductTabs({ activeTab, onTabChange }: Props) {
         type="button"
         role="tab"
         aria-selected={activeTab === 'leadConnector'}
-        className={`${tabBase} ${activeTab === 'leadConnector' ? 'bg-[#155eef]' : ''}`}
+        className={`${tabBase} ${activeTab === 'leadConnector' ? 'bg-[#3f621a]' : ''}`}
         data-node-id="229:11097"
         data-name="Tab - Lead Connector"
         onClick={() => onTabChange('leadConnector')}

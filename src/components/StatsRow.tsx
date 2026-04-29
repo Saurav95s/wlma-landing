@@ -7,12 +7,19 @@ type StatsRowProps = {
 export default function StatsRow({ variant = 'custom' }: StatsRowProps) {
   const statNum =
     "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#155eef] text-center tracking-[-0.96px]"
+  const statNumLc =
+    "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#15803d] text-center tracking-[-0.96px]"
+  const mlmStats = variant === 'highlevel' || variant === 'leadConnector'
+  const statNumMlm = variant === 'leadConnector' ? statNumLc : statNum
 
-  if (variant === 'highlevel') {
+  if (mlmStats) {
     return (
-      <div className="content-stretch flex items-center justify-between relative size-full whitespace-nowrap" data-node-id="229:11587">
+      <div
+        className="content-stretch flex items-center justify-between relative size-full whitespace-nowrap"
+        data-node-id={variant === 'leadConnector' ? '229:11377' : '229:11587'}
+      >
         <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0" data-name="Stat">
-          <p className={statNum} data-node-id="229:11589">
+          <p className={statNumMlm} data-node-id={variant === 'leadConnector' ? '229:11379' : '229:11589'}>
             500K+
           </p>
           <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[18px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/neutral\/gray\/900,#101828)]">
@@ -20,7 +27,7 @@ export default function StatsRow({ variant = 'custom' }: StatsRowProps) {
           </p>
         </div>
         <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0" data-name="Stat">
-          <p className={statNum} data-node-id="229:11592">
+          <p className={statNumMlm} data-node-id={variant === 'leadConnector' ? '229:11382' : '229:11592'}>
             4.5★
           </p>
           <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[18px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/neutral\/gray\/900,#101828)]">
@@ -28,7 +35,7 @@ export default function StatsRow({ variant = 'custom' }: StatsRowProps) {
           </p>
         </div>
         <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0" data-name="Stat">
-          <p className={statNum} data-node-id="229:11595">
+          <p className={statNumMlm} data-node-id={variant === 'leadConnector' ? '229:11385' : '229:11595'}>
             {'<'}3s
           </p>
           <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[18px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/neutral\/gray\/900,#101828)]">
@@ -36,7 +43,7 @@ export default function StatsRow({ variant = 'custom' }: StatsRowProps) {
           </p>
         </div>
         <div className="content-stretch flex flex-col gap-[6px] items-start overflow-clip relative shrink-0" data-name="Stat">
-          <p className={statNum} data-node-id="229:11598">
+          <p className={statNumMlm} data-node-id={variant === 'leadConnector' ? '229:11388' : '229:11598'}>
             60%
           </p>
           <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[18px] not-italic relative shrink-0 text-[16px] text-[color:var(--color\/neutral\/gray\/900,#101828)]">

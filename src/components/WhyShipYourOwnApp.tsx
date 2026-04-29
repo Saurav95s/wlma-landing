@@ -33,13 +33,23 @@ type WhyShipYourOwnAppProps = {
 
 export default function WhyShipYourOwnApp({ variant = "custom" }: WhyShipYourOwnAppProps) {
   const isHighLevel = variant === "highlevel";
+  const isLeadConnector = variant === "leadConnector";
+  const stepNumClass = isLeadConnector
+    ? "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#3f621a] text-center tracking-[-0.96px]"
+    : isHighLevel
+      ? "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#004eeb] text-center tracking-[-0.96px]"
+      : "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#155eef] text-center tracking-[-0.96px]";
 
   return (
     <div className="relative size-full" data-node-id="229:11172" data-name="Why Ship Your Own App">
       <div className="absolute left-1/2 top-0 flex w-[1112px] -translate-x-1/2 flex-col content-stretch items-start gap-[32px]" data-node-id="229:11173">
         <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="229:11174">
           <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[#10172a] text-[0px] text-center tracking-[-1.12px] w-full" data-node-id="229:11175">
-            {isHighLevel ? (
+            {isLeadConnector ? (
+              <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64px] text-[48px]" data-node-id="229:11390">
+                Why teams rely on LeadConnector
+              </span>
+            ) : isHighLevel ? (
               <span className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[64px] text-[48px]" data-node-id="229:11602">
                 Everything HighLevel, in your pocket
               </span>
@@ -54,29 +64,24 @@ export default function WhyShipYourOwnApp({ variant = "custom" }: WhyShipYourOwn
         </div>
         <div className="content-stretch flex gap-[16px] items-center relative shrink-0 w-full" data-node-id="229:11176">
           <div
-            className={`bg-gradient-to-b content-stretch flex flex-col gap-[16px] h-[460px] items-start overflow-clip p-[32px] relative rounded-[24px] shrink-0 to-[#fdf9f4] w-[360px] ${isHighLevel ? "from-[#dde9ff]" : "from-[#ffedde]"}`}
+            className={`bg-gradient-to-b content-stretch flex flex-col gap-[16px] h-[460px] items-start overflow-clip p-[32px] relative rounded-[24px] shrink-0 to-[#fdf9f4] w-[360px] ${isLeadConnector ? "from-[#d1fae5]" : isHighLevel ? "from-[#dde9ff]" : "from-[#ffedde]"}`}
             data-node-id="229:11177"
             data-name="Reason 01"
           >
             <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 whitespace-nowrap" data-node-id="331:12620">
-              <p
-                className={
-                  isHighLevel
-                    ? "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#004eeb] text-center tracking-[-0.96px]"
-                    : "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#155eef] text-center tracking-[-0.96px]"
-                }
-                data-node-id="229:11178"
-              >
+              <p className={stepNumClass} data-node-id="229:11178">
                 01
               </p>
               <p className="font-['Inter:Bold',sans-serif] font-bold leading-[30px] not-italic relative shrink-0 text-[24px] text-[color:var(--color\/neutral\/gray\/900,#101828)] tracking-[-0.24px]" data-node-id="229:11179">
-                {isHighLevel ? "Run all your sub-accounts" : "Build real brand authority"}
+                {isLeadConnector ? "Work from anywhere" : isHighLevel ? "Run all your sub-accounts" : "Build real brand authority"}
               </p>
             </div>
             <p className="font-['Inter:Regular',sans-serif] font-normal h-[144px] leading-[24px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/neutral\/gray\/700,#344054)] w-[296px]" data-node-id="229:11180">
-              {isHighLevel
-                ? "Switch between sub-accounts, check pipelines, and access the full CRM for every client — all without opening a laptop. Your agency travels with you."
-                : "Your logo in the App Store. Your name on every screen. Clients see a real software brand — not a platform they didn’t choose. That’s the kind of credibility a login link can’t deliver."}
+              {isLeadConnector
+                ? "Calls, texts, emails, and calendar in one place. Run your day from your phone — no laptop required — so you never drop a conversation when you’re between meetings or on the road."
+                : isHighLevel
+                  ? "Switch between sub-accounts, check pipelines, and access the full CRM for every client — all without opening a laptop. Your agency travels with you."
+                  : "Your logo in the App Store. Your name on every screen. Clients see a real software brand — not a platform they didn’t choose. That’s the kind of credibility a login link can’t deliver."}
             </p>
             <div className="bg-[rgba(255,255,255,0.75)] h-[190px] overflow-clip relative rounded-tl-[16px] rounded-tr-[16px] shadow-[0px_24px_48px_-12px_rgba(16,24,40,0.18)] shrink-0 w-[297px]" data-node-id="229:11181" data-name="iPhone 16 - 2">
               <div className="-translate-x-1/2 absolute font-['Instrument_Serif:Italic',sans-serif] italic leading-[0] left-[150.48px] text-[#441f95] text-[26px] text-center top-[85.04px] tracking-[-0.78px] whitespace-nowrap" data-node-id="229:11182">
@@ -89,27 +94,20 @@ export default function WhyShipYourOwnApp({ variant = "custom" }: WhyShipYourOwn
             </div>
           </div>
           <div
-            className={`bg-gradient-to-b content-stretch flex flex-col gap-[16px] h-[460px] items-start overflow-clip p-[32px] relative rounded-[24px] shrink-0 to-[#fdf9f4] w-[360px] ${isHighLevel ? "from-[#dde9ff]" : "from-[#dbd0f8]"}`}
+            className={`bg-gradient-to-b content-stretch flex flex-col gap-[16px] h-[460px] items-start overflow-clip p-[32px] relative rounded-[24px] shrink-0 to-[#fdf9f4] w-[360px] ${isLeadConnector ? "from-[#d1fae5]" : isHighLevel ? "from-[#dde9ff]" : "from-[#dbd0f8]"}`}
             data-node-id="229:11191"
             data-name="Reason 02"
           >
             <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 whitespace-nowrap" data-node-id="331:12621">
-              <p
-                className={
-                  isHighLevel
-                    ? "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#004eeb] text-center tracking-[-0.96px]"
-                    : "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#155eef] text-center tracking-[-0.96px]"
-                }
-                data-node-id="229:11192"
-              >
+              <p className={stepNumClass} data-node-id="229:11192">
                 02
               </p>
               <p className="font-['Inter:Bold',sans-serif] font-bold leading-[30px] not-italic relative shrink-0 text-[24px] text-[color:var(--color\/neutral\/gray\/900,#101828)] tracking-[-0.24px]" data-node-id="229:11193">
-                {isHighLevel ? "Unified conversations" : "Lock in client retention"}
+                {isLeadConnector ? "Unified inbox" : isHighLevel ? "Unified conversations" : "Lock in client retention"}
               </p>
             </div>
             <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/neutral\/gray\/700,#344054)] w-[296px]" data-node-id="229:11194">
-              {isHighLevel
+              {isLeadConnector || isHighLevel
                 ? "SMS, email, calls, Instagram DMs, Google Business Profile, and web chat — all in one thread. Respond from anywhere: the airport, between meetings, or the couch."
                 : "When clients manage their day through your branded app — messages, bookings, payments, reviews — your platform becomes part of their routine. That’s retention built into the daily workflow, not a contract clause."}
             </p>
@@ -542,29 +540,24 @@ export default function WhyShipYourOwnApp({ variant = "custom" }: WhyShipYourOwn
             </div>
           </div>
           <div
-            className={`bg-gradient-to-b content-stretch flex flex-col gap-[16px] h-[460px] items-start overflow-clip p-[32px] relative rounded-[24px] shrink-0 to-[#fdf9f4] w-[360px] ${isHighLevel ? "from-[#dde9ff]" : "from-[#def5e8]"}`}
+            className={`bg-gradient-to-b content-stretch flex flex-col gap-[16px] h-[460px] items-start overflow-clip p-[32px] relative rounded-[24px] shrink-0 to-[#fdf9f4] w-[360px] ${isLeadConnector ? "from-[#d1fae5]" : isHighLevel ? "from-[#dde9ff]" : "from-[#def5e8]"}`}
             data-node-id="229:11248"
             data-name="Reason 03"
           >
             <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 whitespace-nowrap" data-node-id="331:12622">
-              <p
-                className={
-                  isHighLevel
-                    ? "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#004eeb] text-center tracking-[-0.96px]"
-                    : "font-['Plus_Jakarta_Sans',sans-serif] font-extrabold italic leading-[64px] relative shrink-0 text-[48px] text-[#155eef] text-center tracking-[-0.96px]"
-                }
-                data-node-id="229:11249"
-              >
+              <p className={stepNumClass} data-node-id="229:11249">
                 03
               </p>
               <p className="font-['Inter:Bold',sans-serif] font-bold leading-[30px] not-italic relative shrink-0 text-[24px] text-[color:var(--color\/neutral\/gray\/900,#101828)] tracking-[-0.24px]" data-node-id="229:11250">
-                {isHighLevel ? "Ask AI in your pocket" : "Win every pitch"}
+                {isLeadConnector ? "Never miss a lead" : isHighLevel ? "Ask AI in your pocket" : "Win every pitch"}
               </p>
             </div>
             <p className="font-['Inter:Regular',sans-serif] font-normal h-[144px] leading-[24px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/neutral\/gray\/700,#344054)] w-[296px]" data-node-id="229:11251">
-              {isHighLevel
-                ? "Let Conversation AI, Voice AI, and workflows close deals while you sleep. Check the reports from your phone in the morning."
-                : "Most agencies pitch a dashboard. You hand over an app. That difference turns heads in sales calls, justifies premium positioning, and makes competitors look like they’re still catching up."}
+              {isLeadConnector
+                ? "Real-time push notifications surface new leads and hot threads the moment they happen. Prioritize what matters and reply before the competition does — even when you’re away from your desk."
+                : isHighLevel
+                  ? "Let Conversation AI, Voice AI, and workflows close deals while you sleep. Check the reports from your phone in the morning."
+                  : "Most agencies pitch a dashboard. You hand over an app. That difference turns heads in sales calls, justifies premium positioning, and makes competitors look like they’re still catching up."}
             </p>
             <div className="bg-[rgba(255,255,255,0.7)] border-[0.823px] border-[var(--color\/neutral\/gray\/200,#eaecf0)] border-solid content-stretch flex flex-col gap-[13.163px] items-start p-[13.163px] relative rounded-tl-[16px] rounded-tr-[16px] shadow-[0px_32px_64px_0px_rgba(16,24,40,0.14)] shrink-0 w-[297px]" data-node-id="229:11252">
               <div className="content-stretch flex flex-col gap-[13.163px] items-start relative shrink-0 w-full" data-node-id="229:11253">

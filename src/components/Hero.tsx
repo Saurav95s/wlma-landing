@@ -24,6 +24,17 @@ const hlCardIconStar = 'https://www.figma.com/api/mcp/asset/8ace99f9-33b0-49ed-8
 const hlCardIconDownload = 'https://www.figma.com/api/mcp/asset/fd4e1ddd-a235-4be0-aa8d-674c827a740a'
 const hlCardIconLightning = 'https://www.figma.com/api/mcp/asset/6ed31275-368d-4902-bb25-0dbdb2b37fba'
 
+/** LeadConnector hero — Figma node 229:11329 (WLMA-Q2-26) */
+const lcPhoneScreen1 = 'https://www.figma.com/api/mcp/asset/ced51d9b-b0f8-4bd4-b987-e07532ba19a8'
+const lcPhoneScreen2 = 'https://www.figma.com/api/mcp/asset/db775517-4218-4b2d-a2fd-120fcbd759a8'
+const lcPhoneLogo = 'https://www.figma.com/api/mcp/asset/723120cf-52ed-4989-bc16-cdfd63abda68'
+const lcAvatars = 'https://www.figma.com/api/mcp/asset/6b5d46a2-611b-4581-ab76-a6b7608beb71'
+const lcPlay = 'https://www.figma.com/api/mcp/asset/29d326e0-51db-4dfc-9a9c-0d088948cf39'
+const lcCardIconUser = 'https://www.figma.com/api/mcp/asset/26f57f0c-3881-421e-9fa6-7da12a199bde'
+const lcCardIconStar = 'https://www.figma.com/api/mcp/asset/307da34e-183e-4a9d-880b-fb4712edffdf'
+const lcCardIconDownload = 'https://www.figma.com/api/mcp/asset/aadae5f2-b3e0-41e0-9cc9-154455870799'
+const lcCardIconLightning = 'https://www.figma.com/api/mcp/asset/63d4bea4-14b4-407f-9c71-f65108842176'
+
 type HeroProps = {
   variant?: ProductTabId
 }
@@ -498,13 +509,238 @@ function HighLevelHeroFigma() {
   )
 }
 
-export default function Hero({ variant = 'custom' }: HeroProps) {
-  const isHighLevel = variant === 'highlevel'
+/** LeadConnector tab: pixel layout from Figma 229:11329 — single 1112×581 artboard, all absolute. */
+function LeadConnectorHeroFigma() {
+  return (
+    <div
+      className="relative mx-auto h-[581px] w-full max-w-[1112px] shrink-0 overflow-clip"
+      data-node-id="229:11329"
+      data-name="Hero"
+    >
+      <div
+        className="absolute left-[47px] top-[80px] flex items-center justify-center gap-[12px] overflow-clip rounded-[999px] border border-[rgba(0,0,0,0.06)] border-solid bg-white py-[10px] pl-[16px] pr-[20px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.05)]"
+        data-node-id="229:11330"
+        data-name="Agencies Pill"
+      >
+        <div className="relative h-[24px] w-[56px] shrink-0" data-node-id="229:11331" data-name="Avatars">
+          <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcAvatars} />
+        </div>
+        <p
+          className="relative shrink-0 whitespace-nowrap font-['Inter:Semi_Bold',sans-serif] text-[14px] font-semibold leading-[normal] not-italic text-[#151b2b]"
+          data-node-id="229:11335"
+        >
+          2,400+ agencies shipped an app last quarter
+        </p>
+      </div>
+      <p
+        className="absolute left-[47px] top-[168px] w-[573px] font-['Inter:Semi_Bold',sans-serif] text-[48px] font-semibold leading-[normal] tracking-[-1.44px] not-italic text-[#10172a]"
+        data-node-id="229:11336"
+      >
+        Your leads, your conversations, always on
+      </p>
+      <p
+        className="absolute left-[47px] top-[296px] w-[463px] font-['Inter:Medium',sans-serif] text-[18px] font-medium leading-[28px] not-italic text-[#596070]"
+        data-node-id="229:11338"
+      >
+        Manage leads, conversations, bookings, and payments from your phone. Everything your team needs to stay responsive — free on iOS and Android.
+      </p>
+      <div
+        className="-translate-x-1/2 absolute left-[calc(50%-341px)] top-[428px] flex flex-col items-start gap-[16px] overflow-clip"
+        data-node-id="229:11339"
+        data-name="CTA Row"
+      >
+        <div
+          className="relative flex h-[48px] shrink-0 items-center justify-center gap-[12px] overflow-clip rounded-[999px] bg-[#10172a] py-[8px] pl-[24px] pr-[8px]"
+          data-node-id="229:11340"
+          data-name="Primary CTA"
+        >
+          <p
+            className="relative shrink-0 whitespace-nowrap font-['Inter:Semi_Bold',sans-serif] text-[16px] font-semibold leading-[normal] not-italic text-white"
+            data-node-id="229:11341"
+          >
+            Free to download
+          </p>
+          <div
+            className="relative flex h-full shrink-0 items-center justify-center overflow-clip rounded-[999px] bg-[#3f621a] px-[14px] py-[8px]"
+            data-node-id="229:11342"
+            data-name="Price chip"
+          >
+            <p className="relative shrink-0 whitespace-nowrap font-['Inter:Bold',sans-serif] text-[16px] font-bold leading-[normal] not-italic text-white" data-node-id="229:11343">{`iOS `}</p>
+          </div>
+          <div
+            className="relative flex h-full shrink-0 items-center justify-center overflow-clip rounded-[999px] bg-[#3f621a] px-[14px] py-[8px]"
+            data-node-id="308:10463"
+            data-name="Price chip"
+          >
+            <p className="relative shrink-0 whitespace-nowrap font-['Inter:Bold',sans-serif] text-[16px] font-bold leading-[normal] not-italic text-white" data-node-id="308:10464">
+              Android
+            </p>
+          </div>
+        </div>
+        <div
+          className="relative flex h-[48px] shrink-0 items-center justify-center gap-[12px] overflow-clip rounded-[999px] border border-[rgba(0,0,0,0.08)] border-solid bg-white py-[8px] pl-[8px] pr-[24px]"
+          data-node-id="229:11346"
+          data-name="Secondary CTA"
+        >
+          <div className="relative size-[36px] shrink-0" data-node-id="229:11347" data-name="Play">
+            <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcPlay} />
+          </div>
+          <p
+            className="relative shrink-0 whitespace-nowrap font-['Inter:Semi_Bold',sans-serif] text-[16px] font-semibold leading-[normal] not-italic text-[#10172a]"
+            data-node-id="229:11349"
+          >
+            Watch 60-sec tour
+          </p>
+        </div>
+      </div>
+      <div className="absolute left-[802.45px] top-[125.93px] flex h-[342.856px] w-[201.487px] items-center justify-center">
+        <div className="flex-none rotate-[9.84deg]">
+          <div
+            className="relative h-[322.201px] w-[148.621px] overflow-clip rounded-[12.101px] border-[#333340] border-[3.025px] border-solid bg-[#171c2b] shadow-[0px_9.076px_18.152px_-3.025px_rgba(0,0,0,0.35)]"
+            data-node-id="229:11350"
+            data-name="Phone Back"
+          >
+            <div className="absolute left-[-3.12px] top-[-3.03px] h-[322.201px] w-[148.621px]" data-node-id="229:11351" data-name="Homepage 1">
+              <img alt="" className="pointer-events-none absolute inset-0 size-full max-w-none object-cover" src={lcPhoneScreen1} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="absolute left-[745.61px] top-[131.25px] h-[322.201px] w-[148.621px] overflow-clip rounded-[12.101px] border-[#333340] border-[3.025px] border-solid bg-[#171c2b] shadow-[0px_9.076px_18.152px_-3.025px_rgba(0,0,0,0.35)]"
+        data-node-id="229:11352"
+        data-name="Phone Back"
+      >
+        <div className="absolute left-[-3.12px] top-[-3.03px] h-[322.201px] w-[148.621px]" data-node-id="229:11353" data-name="Homepage 1">
+          <img alt="" className="pointer-events-none absolute inset-0 size-full max-w-none object-cover" src={lcPhoneScreen2} />
+        </div>
+      </div>
+      <div className="absolute left-[635.32px] top-[130.26px] flex h-[334.675px] w-[178.069px] items-center justify-center">
+        <div className="flex-none rotate-[-5.36deg]">
+          <div
+            className="relative h-[322.201px] w-[148.621px] overflow-clip rounded-[12.101px] border-[#333340] border-[3.025px] border-solid bg-[#171c2b] shadow-[0px_9.076px_18.152px_-3.025px_rgba(0,0,0,0.35)]"
+            data-node-id="229:11354"
+            data-name="Phone Back"
+          >
+            <div
+              className="absolute left-[-3.12px] top-[-3.03px] h-[322.201px] w-[148.621px] overflow-clip bg-[#08213d]"
+              data-node-id="229:11355"
+              data-name="iPhone 16 - 1"
+            >
+              <div
+                className="-translate-x-1/2 -translate-y-1/2 absolute left-[calc(50%+0.1px)] top-[calc(50%+0.19px)] h-[51.053px] w-[45.002px]"
+                data-node-id="229:11356"
+                data-name="image 84"
+              >
+                <div className="pointer-events-none absolute inset-0 overflow-hidden">
+                  <img alt="" className="absolute left-0 top-0 h-full max-w-none w-[517.17%]" src={lcPhoneLogo} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="absolute left-[510px] top-[130px] flex items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
+        data-node-id="229:11357"
+        data-name="Card +42%"
+      >
+        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#d1fadf]" data-node-id="229:11358" data-name="Icon">
+          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="image-user-right">
+            <div className="absolute inset-[4.17%]" data-name="Icon (Stroke)">
+              <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcCardIconUser} />
+            </div>
+          </div>
+        </div>
+        <div className="relative flex w-[100px] shrink-0 flex-col items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11359" data-name="Frame">
+          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11360">
+            +42%
+          </p>
+          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11361">
+            client retention
+          </p>
+        </div>
+      </div>
+      <div
+        className="absolute left-[551px] top-[403px] flex items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
+        data-node-id="229:11362"
+        data-name="Card 4.8"
+      >
+        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#fef0c7]" data-node-id="229:11363" data-name="Icon">
+          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="star-01">
+            <div className="absolute inset-[6.79%_6.56%_9.99%_6.56%]" data-name="Icon (Stroke)">
+              <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcCardIconStar} />
+            </div>
+          </div>
+        </div>
+        <div className="relative flex w-[100px] shrink-0 flex-col items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11364" data-name="Frame">
+          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11365">
+            4.8
+          </p>
+          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11366">
+            avg rating
+          </p>
+        </div>
+      </div>
+      <div
+        className="absolute left-[903px] top-[339px] flex items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
+        data-node-id="229:11367"
+        data-name="Card 12.4k"
+      >
+        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#d1fadf]" data-node-id="229:11368" data-name="Icon">
+          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="download-01">
+            <div className="absolute inset-[8.33%]" data-name="Icon (Stroke)">
+              <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcCardIconDownload} />
+            </div>
+          </div>
+        </div>
+        <div className="relative flex w-[100px] shrink-0 flex-col items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11369" data-name="Frame">
+          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11370">
+            12.4k
+          </p>
+          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11371">
+            client downloads
+          </p>
+        </div>
+      </div>
+      <div
+        className="absolute left-[860px] top-[91px] flex items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
+        data-node-id="229:11372"
+        data-name="Card 18d"
+      >
+        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#fef0c7]" data-node-id="229:11373" data-name="Icon">
+          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="lightning-01">
+            <div className="absolute inset-[4.17%_10.7%]" data-name="Icon (Stroke)">
+              <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcCardIconLightning} />
+            </div>
+          </div>
+        </div>
+        <div className="relative flex w-[106px] shrink-0 flex-col items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11374" data-name="Frame">
+          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11375">
+            18 days
+          </p>
+          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11376">
+            to launch your app
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
-  if (!isHighLevel) {
+export default function Hero({ variant = 'custom' }: HeroProps) {
+  if (variant === 'custom') {
     return (
       <div className="relative w-full min-h-[581px] overflow-clip rounded-[32px] bg-gradient-to-b from-[#fdf9f4] from-[0%] via-[#fef1e8] via-[50%] to-[#f4e1f1] to-[100%]">
         <CustomHeroFigma />
+      </div>
+    )
+  }
+
+  if (variant === 'leadConnector') {
+    return (
+      <div className="relative w-full min-h-[581px] overflow-clip rounded-[32px] bg-gradient-to-b from-[#fdf9f4] to-[#b8fdd0]">
+        <LeadConnectorHeroFigma />
       </div>
     )
   }
