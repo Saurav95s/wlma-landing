@@ -98,7 +98,7 @@ function CustomHeroFigma() {
             data-name="Price chip"
           >
             <p
-              className="relative shrink-0 whitespace-nowrap font-['Inter:Bold',sans-serif] text-[16px] font-bold leading-[normal] not-italic text-white"
+              className="relative shrink-0 whitespace-nowrap font-['Inter:Medium',sans-serif] text-[16px] font-medium leading-[normal] not-italic text-white"
               data-node-id="229:11116"
             >
               $99/mo
@@ -565,14 +565,14 @@ function LeadConnectorHeroFigma() {
             data-node-id="229:11342"
             data-name="Price chip"
           >
-            <p className="relative shrink-0 whitespace-nowrap font-['Inter:Bold',sans-serif] text-[16px] font-bold leading-[normal] not-italic text-white" data-node-id="229:11343">{`iOS `}</p>
+            <p className="relative shrink-0 whitespace-nowrap font-['Inter:Regular',sans-serif] text-[16px] font-normal leading-[normal] not-italic text-white" data-node-id="229:11343">{`iOS `}</p>
           </div>
           <div
             className="relative flex h-full shrink-0 items-center justify-center overflow-clip rounded-[999px] bg-[#3f621a] px-[14px] py-[8px]"
             data-node-id="308:10463"
             data-name="Price chip"
           >
-            <p className="relative shrink-0 whitespace-nowrap font-['Inter:Bold',sans-serif] text-[16px] font-bold leading-[normal] not-italic text-white" data-node-id="308:10464">
+            <p className="relative shrink-0 whitespace-nowrap font-['Inter:Regular',sans-serif] text-[16px] font-normal leading-[normal] not-italic text-white" data-node-id="308:10464">
               Android
             </p>
           </div>
