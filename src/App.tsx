@@ -27,7 +27,7 @@ export default function App() {
                 <ProductTabs activeTab={productTab} onTabChange={setProductTab} />
               </div>
             </div>
-            <div className="mx-auto flex w-full max-w-[1112px] flex-col gap-8 lg:max-w-full">
+            <div className="mx-auto flex w-[1112px] shrink-0 flex-col gap-8">
               <div className="min-h-[581px] w-full shrink-0">
                 <Hero variant={productTab} />
               </div>
