@@ -8,10 +8,6 @@ const imgIconStroke = 'https://www.figma.com/api/mcp/asset/fe8be713-95cd-468f-97
 const imgFrame1597877893 = 'https://www.figma.com/api/mcp/asset/f212866c-4fcd-4728-a525-ae8ba44da195'
 const imgPlay = 'https://www.figma.com/api/mcp/asset/99aef6b9-79a0-49d9-be20-9d1254a6fbb2'
 const imgImage1Vectorized = 'https://www.figma.com/api/mcp/asset/ff98832a-3768-4c2c-a9fd-f633aede9bae'
-const imgIconStroke1 = 'https://www.figma.com/api/mcp/asset/167bdbab-0c5a-4f72-9c38-ad8903204d90'
-const imgIconStroke2 = 'https://www.figma.com/api/mcp/asset/1a3bc3b1-d741-486d-8d99-e1f672012ddf'
-const imgIconStroke3 = 'https://www.figma.com/api/mcp/asset/ac836a48-2697-43c0-a7b6-9301436cfb61'
-const imgIconStroke4 = 'https://www.figma.com/api/mcp/asset/f4d12737-d735-4a5d-9ccd-ea83c2fecfe6'
 
 /** High Level hero — Figma node 229:11539 (WLMA-Q2-26) */
 const hlPhoneScreen1 = 'https://www.figma.com/api/mcp/asset/50db8d95-cfef-48a9-86b2-a79e283376e5'
@@ -19,10 +15,6 @@ const hlPhoneScreen2 = 'https://www.figma.com/api/mcp/asset/576dcd0e-c204-4311-a
 const hlPhoneLogo = 'https://www.figma.com/api/mcp/asset/e4e5df36-ed46-4197-ba22-70b148cee70b'
 const hlAvatars = 'https://www.figma.com/api/mcp/asset/1e02a15a-6b9a-4597-913e-3799e9e6f139'
 const hlPlay = 'https://www.figma.com/api/mcp/asset/eee516f9-3159-47e3-928c-6e215b7f3239'
-const hlCardIconUser = 'https://www.figma.com/api/mcp/asset/91ae60f2-29ea-418b-a27c-a1cb528777f6'
-const hlCardIconStar = 'https://www.figma.com/api/mcp/asset/8ace99f9-33b0-49ed-8ec2-4463550ec71a'
-const hlCardIconDownload = 'https://www.figma.com/api/mcp/asset/fd4e1ddd-a235-4be0-aa8d-674c827a740a'
-const hlCardIconLightning = 'https://www.figma.com/api/mcp/asset/6ed31275-368d-4902-bb25-0dbdb2b37fba'
 
 /** LeadConnector hero — Figma node 229:11329 (WLMA-Q2-26) */
 const lcPhoneScreen1 = 'https://www.figma.com/api/mcp/asset/ced51d9b-b0f8-4bd4-b987-e07532ba19a8'
@@ -30,10 +22,6 @@ const lcPhoneScreen2 = 'https://www.figma.com/api/mcp/asset/db775517-4218-4b2d-a
 const lcPhoneLogo = 'https://www.figma.com/api/mcp/asset/723120cf-52ed-4989-bc16-cdfd63abda68'
 const lcAvatars = 'https://www.figma.com/api/mcp/asset/6b5d46a2-611b-4581-ab76-a6b7608beb71'
 const lcPlay = 'https://www.figma.com/api/mcp/asset/29d326e0-51db-4dfc-9a9c-0d088948cf39'
-const lcCardIconUser = 'https://www.figma.com/api/mcp/asset/26f57f0c-3881-421e-9fa6-7da12a199bde'
-const lcCardIconStar = 'https://www.figma.com/api/mcp/asset/307da34e-183e-4a9d-880b-fb4712edffdf'
-const lcCardIconDownload = 'https://www.figma.com/api/mcp/asset/aadae5f2-b3e0-41e0-9cc9-154455870799'
-const lcCardIconLightning = 'https://www.figma.com/api/mcp/asset/63d4bea4-14b4-407f-9c71-f65108842176'
 
 type HeroProps = {
   variant?: ProductTabId
@@ -191,106 +179,6 @@ function CustomHeroFigma() {
       >
         <p className="leading-[normal]">App</p>
       </div>
-      <div
-        className="absolute left-[568px] top-[103px] flex content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11139"
-        data-name="Card +42%"
-      >
-        <div
-          className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#d1fadf]"
-          data-node-id="229:11140"
-          data-name="Icon"
-        >
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="image-user-right">
-            <div className="absolute inset-[4.17%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={imgIconStroke1} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col content-stretch items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11141" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11142">
-            +42%
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11143">
-            client retention
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[606px] top-[416px] flex content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11144"
-        data-name="Card 4.8"
-      >
-        <div
-          className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#fef0c7]"
-          data-node-id="229:11145"
-          data-name="Icon"
-        >
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="star-01">
-            <div className="absolute inset-[6.79%_6.56%_9.99%_6.56%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={imgIconStroke2} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col content-stretch items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11146" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11147">
-            4.8
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11148">
-            avg rating
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[880px] top-[403px] flex content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11149"
-        data-name="Card 12.4k"
-      >
-        <div
-          className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#d1fadf]"
-          data-node-id="229:11150"
-          data-name="Icon"
-        >
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="download-01">
-            <div className="absolute inset-[8.33%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={imgIconStroke3} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col content-stretch items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11151" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11152">
-            12.4k
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11153">
-            client downloads
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[874px] top-[100px] flex content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11154"
-        data-name="Card 18d"
-      >
-        <div
-          className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#fef0c7]"
-          data-node-id="229:11155"
-          data-name="Icon"
-        >
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="lightning-01">
-            <div className="absolute inset-[4.17%_10.7%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={imgIconStroke4} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[106px] shrink-0 flex-col content-stretch items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11156" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11157">
-            18 days
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11158">
-            to launch your app
-          </p>
-        </div>
-      </div>
     </div>
   )
 }
@@ -419,90 +307,6 @@ function HighLevelHeroFigma() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div
-        className="absolute left-[575px] top-[100px] flex content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11567"
-        data-name="Card +42%"
-      >
-        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#d1fadf]" data-node-id="229:11568" data-name="Icon">
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="image-user-right">
-            <div className="absolute inset-[4.17%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={hlCardIconUser} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col content-stretch items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11569" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11570">
-            +42%
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11571">
-            client retention
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[586px] top-[369px] flex content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11572"
-        data-name="Card 4.8"
-      >
-        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#fef0c7]" data-node-id="229:11573" data-name="Icon">
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="star-01">
-            <div className="absolute inset-[6.79%_6.56%_9.99%_6.56%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={hlCardIconStar} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col content-stretch items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11574" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11575">
-            4.8
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11576">
-            avg rating
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[863px] top-[349px] flex content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11577"
-        data-name="Card 12.4k"
-      >
-        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#d1fadf]" data-node-id="229:11578" data-name="Icon">
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="download-01">
-            <div className="absolute inset-[8.33%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={hlCardIconDownload} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col content-stretch items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11579" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11580">
-            12.4k
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11581">
-            client downloads
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[875px] top-[94px] flex content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11582"
-        data-name="Card 18d"
-      >
-        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#fef0c7]" data-node-id="229:11583" data-name="Icon">
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="lightning-01">
-            <div className="absolute inset-[4.17%_10.7%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={hlCardIconLightning} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[106px] shrink-0 flex-col content-stretch items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11584" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11585">
-            18 days
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11586">
-            to launch your app
-          </p>
         </div>
       </div>
     </div>
@@ -638,90 +442,6 @@ function LeadConnectorHeroFigma() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div
-        className="absolute left-[510px] top-[130px] flex items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11357"
-        data-name="Card +42%"
-      >
-        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#d1fadf]" data-node-id="229:11358" data-name="Icon">
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="image-user-right">
-            <div className="absolute inset-[4.17%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcCardIconUser} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11359" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11360">
-            +42%
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11361">
-            client retention
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[551px] top-[403px] flex items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11362"
-        data-name="Card 4.8"
-      >
-        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#fef0c7]" data-node-id="229:11363" data-name="Icon">
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="star-01">
-            <div className="absolute inset-[6.79%_6.56%_9.99%_6.56%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcCardIconStar} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11364" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11365">
-            4.8
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11366">
-            avg rating
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[903px] top-[339px] flex items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11367"
-        data-name="Card 12.4k"
-      >
-        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#d1fadf]" data-node-id="229:11368" data-name="Icon">
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="download-01">
-            <div className="absolute inset-[8.33%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcCardIconDownload} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[100px] shrink-0 flex-col items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11369" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11370">
-            12.4k
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11371">
-            client downloads
-          </p>
-        </div>
-      </div>
-      <div
-        className="absolute left-[860px] top-[91px] flex items-center justify-center gap-[12px] overflow-clip rounded-[16px] border border-[rgba(0,0,0,0.05)] border-solid bg-white py-[12px] pl-[14px] pr-[18px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)]"
-        data-node-id="229:11372"
-        data-name="Card 18d"
-      >
-        <div className="relative flex size-[36px] shrink-0 items-center justify-center rounded-[18px] bg-[#fef0c7]" data-node-id="229:11373" data-name="Icon">
-          <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 size-[20px] overflow-clip" data-name="lightning-01">
-            <div className="absolute inset-[4.17%_10.7%]" data-name="Icon (Stroke)">
-              <img alt="" className="absolute inset-0 block size-full max-w-none" src={lcCardIconLightning} />
-            </div>
-          </div>
-        </div>
-        <div className="relative flex w-[106px] shrink-0 flex-col items-start overflow-clip whitespace-nowrap leading-[normal] not-italic" data-node-id="229:11374" data-name="Frame">
-          <p className="relative shrink-0 font-['Inter:Bold',sans-serif] text-[17px] font-bold text-[#10172a]" data-node-id="229:11375">
-            18 days
-          </p>
-          <p className="relative shrink-0 font-['Inter:Regular',sans-serif] text-[12px] font-normal text-[#596070]" data-node-id="229:11376">
-            to launch your app
-          </p>
         </div>
       </div>
     </div>
