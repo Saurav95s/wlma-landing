@@ -40,8 +40,10 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
       data-node-id={isHighLevel ? '229:11539' : '229:11102'}
       data-name="Hero"
     >
+      <div className="relative mx-auto flex h-[581px] w-full max-w-[1112px] flex-col xl:h-auto xl:min-h-[581px] xl:max-w-[1280px] xl:flex-row xl:items-start xl:justify-between xl:gap-6 xl:pl-2 xl:pr-10 xl:pt-[80px]">
+        <div className="relative z-30 h-[581px] w-full shrink-0 xl:h-[581px] xl:w-[560px] xl:max-w-[560px]">
       <div
-        className="absolute bg-white border border-[rgba(0,0,0,0.06)] border-solid content-stretch flex gap-[12px] items-center justify-center left-[47px] overflow-clip pl-[16px] pr-[20px] py-[10px] rounded-[999px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.05)] top-[80px]"
+        className="absolute bg-white border border-[rgba(0,0,0,0.06)] border-solid content-stretch flex gap-[12px] items-center justify-center left-[47px] overflow-clip pl-[16px] pr-[20px] py-[10px] rounded-[999px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.05)] top-[80px] xl:top-0"
         data-node-id={isHighLevel ? '229:11540' : '229:11103'}
         data-name="Agencies Pill"
       >
@@ -58,20 +60,20 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
       {isHighLevel ? (
         <>
           <div
-            className="absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[0] left-[47px] not-italic text-[#10172a] text-[48px] top-[168px] tracking-[-1.44px] w-[628px] whitespace-pre-wrap"
+            className="absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[0] left-[47px] not-italic text-[#10172a] text-[48px] top-[168px] tracking-[-1.44px] w-[628px] max-w-[calc(100%-24px)] whitespace-pre-wrap xl:top-[88px]"
             data-node-id="229:11546"
           >
             <p className="leading-[normal] mb-0">{`Your full HighLevel `}</p>
             <p className="leading-[normal]">platform, in your pocket</p>
           </div>
           <p
-            className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[28px] left-[47px] not-italic text-[#596070] text-[18px] top-[296px] w-[463px]"
+            className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[28px] left-[47px] not-italic text-[#596070] text-[18px] top-[296px] w-[463px] max-w-[calc(100%-24px)] xl:top-[216px]"
             data-node-id="229:11548"
           >
             Manage conversations, pipelines, contacts, and AI workflows from your phone. Everything you rely on in HighLevel — free on iOS and Android.
           </p>
           <div
-            className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[16px] items-start left-[calc(50%-335px)] overflow-clip top-[426px]"
+            className="absolute content-stretch flex flex-col gap-[16px] items-start left-[47px] overflow-clip top-[426px] xl:top-[346px]"
             data-node-id="229:11549"
             data-name="CTA Row"
           >
@@ -125,23 +127,23 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
       ) : (
         <>
           <p
-            className="absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] left-[47px] not-italic text-[#10172a] text-[48px] top-[168px] tracking-[-1.44px] w-[550px]"
+            className="absolute font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] left-[47px] not-italic text-[#10172a] text-[48px] top-[168px] tracking-[-1.44px] w-[550px] max-w-[calc(100%-24px)] xl:top-[88px]"
             data-node-id="229:11109"
           >
             Every great brand has an
           </p>
           <div
-            className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[152px] not-italic text-[#10172a] text-[48px] top-[262px] tracking-[-1.44px] whitespace-nowrap"
+            className="-translate-y-1/2 absolute flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] left-[152px] not-italic text-[#10172a] text-[48px] top-[262px] tracking-[-1.44px] whitespace-nowrap xl:top-[182px]"
             data-node-id="331:12619"
           >
             <p className="leading-[normal]">Now yours does to</p>
           </div>
           <p
-            className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[28px] left-[47px] not-italic text-[#596070] text-[18px] top-[302px] w-[551px]"
+            className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[28px] left-[47px] not-italic text-[#596070] text-[18px] top-[302px] w-[551px] max-w-[calc(100%-24px)] xl:top-[222px]"
             data-node-id="229:11111"
           >{`A white-labeled iOS & Android app with your name, your brand, and your layout — published to the App Store as your own. The perfect companion to your white-labeled HighLevel platform. No developers needed.`}</p>
           <div
-            className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[16px] items-start left-[calc(50%-302px)] overflow-clip top-[426px]"
+            className="absolute content-stretch flex flex-col gap-[16px] items-start left-[47px] overflow-clip top-[426px] xl:top-[346px]"
             data-node-id="229:11112"
             data-name="CTA Row"
           >
@@ -206,8 +208,18 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
         </>
       )}
       {!isHighLevel ? (
+        <div
+          className="-translate-y-1/2 absolute flex flex-col font-['Plus_Jakarta_Sans',sans-serif] font-semibold italic justify-center leading-[0] left-[47px] text-[#155eef] text-[48px] top-[261px] tracking-[-1.44px] whitespace-nowrap xl:top-[181px]"
+          data-node-id="229:11138"
+        >
+          <p className="leading-[normal]">App</p>
+        </div>
+      ) : null}
+        </div>
+        <div className="absolute inset-0 z-10 mx-auto h-[581px] w-full max-w-[1112px] xl:static xl:z-10 xl:mx-0 xl:h-[581px] xl:w-[552px] xl:max-w-[552px] xl:shrink-0">
+      {!isHighLevel ? (
         <>
-          <div className="absolute flex h-[360.981px] items-center justify-center left-[814.48px] top-[130px] w-[212.138px]">
+          <div className="absolute flex h-[360.981px] items-center justify-center left-[814.48px] top-[130px] w-[212.138px] xl:left-[254px] xl:top-[50px]">
             <div className="flex-none rotate-[9.84deg]">
               <div
                 className="bg-[#171c2b] border-[#333340] border-[3.185px] border-solid h-[339.233px] overflow-clip relative rounded-[12.741px] shadow-[0px_9.556px_19.112px_-3.185px_rgba(0,0,0,0.35)] w-[156.477px]"
@@ -221,7 +233,7 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
             </div>
           </div>
           <div
-            className="absolute bg-[#171c2b] border-[#333340] border-[3.185px] border-solid h-[339.233px] left-[770px] overflow-clip rounded-[12.741px] shadow-[0px_9.556px_19.112px_-3.185px_rgba(0,0,0,0.35)] top-[136.59px] w-[156.477px]"
+            className="absolute bg-[#171c2b] border-[#333340] border-[3.185px] border-solid h-[339.233px] left-[770px] overflow-clip rounded-[12.741px] shadow-[0px_9.556px_19.112px_-3.185px_rgba(0,0,0,0.35)] top-[136.59px] w-[156.477px] xl:left-[210px] xl:top-[56px]"
             data-node-id="229:11125"
             data-name="Phone Back"
           >
@@ -229,7 +241,7 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
               <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHomepage2} />
             </div>
           </div>
-          <div className="absolute flex h-[364.411px] items-center justify-center left-[658px] top-[136.59px] w-[220.724px]">
+          <div className="absolute flex h-[364.411px] items-center justify-center left-[658px] top-[136.59px] w-[220.724px] xl:left-[98px] xl:top-[56px]">
             <div className="flex-none rotate-[-11.33deg]">
               <div
                 className="bg-[#171c2b] border-[#333340] border-[3.194px] border-solid h-[340.206px] overflow-clip relative rounded-[12.778px] shadow-[0px_9.583px_19.167px_-3.194px_rgba(0,0,0,0.35)] w-[156.926px]"
@@ -258,7 +270,7 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
         </>
       ) : (
         <>
-          <div className="absolute flex h-[342.856px] items-center justify-center left-[825.45px] top-[125.93px] w-[201.487px]">
+          <div className="absolute flex h-[342.856px] items-center justify-center left-[825.45px] top-[125.93px] w-[201.487px] xl:left-[265px] xl:top-[46px]">
             <div className="flex-none rotate-[9.84deg]">
               <div
                 className="bg-[#171c2b] border-[#333340] border-[3.025px] border-solid h-[322.201px] overflow-clip relative rounded-[12.101px] shadow-[0px_9.076px_18.152px_-3.025px_rgba(0,0,0,0.35)] w-[148.621px]"
@@ -272,7 +284,7 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
             </div>
           </div>
           <div
-            className="absolute bg-[#171c2b] border-[#333340] border-[3.025px] border-solid h-[322.201px] left-[768.61px] overflow-clip rounded-[12.101px] shadow-[0px_9.076px_18.152px_-3.025px_rgba(0,0,0,0.35)] top-[131.25px] w-[148.621px]"
+            className="absolute bg-[#171c2b] border-[#333340] border-[3.025px] border-solid h-[322.201px] left-[768.61px] overflow-clip rounded-[12.101px] shadow-[0px_9.076px_18.152px_-3.025px_rgba(0,0,0,0.35)] top-[131.25px] w-[148.621px] xl:left-[208px] xl:top-[51px]"
             data-node-id="229:11562"
             data-name="Phone Back"
           >
@@ -280,7 +292,7 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
               <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHlHeroHomepage2} />
             </div>
           </div>
-          <div className="absolute flex h-[334.675px] items-center justify-center left-[658.32px] top-[130.26px] w-[178.069px]">
+          <div className="absolute flex h-[334.675px] items-center justify-center left-[658.32px] top-[130.26px] w-[178.069px] xl:left-[98px] xl:top-[50px]">
             <div className="flex-none rotate-[-5.36deg]">
               <div
                 className="bg-[#171c2b] border-[#333340] border-[3.025px] border-solid h-[322.201px] overflow-clip relative rounded-[12.101px] shadow-[0px_9.076px_18.152px_-3.025px_rgba(0,0,0,0.35)] w-[148.621px]"
@@ -301,17 +313,11 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
           </div>
         </>
       )}
-      {!isHighLevel ? (
-        <div
-          className="-translate-y-1/2 absolute flex flex-col font-['Plus_Jakarta_Sans',sans-serif] font-semibold italic justify-center leading-[0] left-[47px] text-[#155eef] text-[48px] top-[261px] tracking-[-1.44px] whitespace-nowrap"
-          data-node-id="229:11138"
-        >
-          <p className="leading-[normal]">App</p>
-        </div>
-      ) : null}
       <div
         className={`absolute bg-white border border-[rgba(0,0,0,0.05)] border-solid content-stretch flex gap-[12px] items-center justify-center overflow-clip pl-[14px] pr-[18px] py-[12px] rounded-[16px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)] ${
-          isHighLevel ? 'left-[575px] top-[100px]' : 'left-[568px] top-[103px]'
+          isHighLevel
+            ? 'left-[575px] top-[100px] xl:left-[15px] xl:top-[20px]'
+            : 'left-[568px] top-[103px] xl:left-[8px] xl:top-[23px]'
         }`}
         data-node-id={isHighLevel ? '229:11567' : '229:11139'}
         data-name="Card +42%"
@@ -338,7 +344,9 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
       </div>
       <div
         className={`absolute bg-white border border-[rgba(0,0,0,0.05)] border-solid content-stretch flex gap-[12px] items-center justify-center overflow-clip pl-[14px] pr-[18px] py-[12px] rounded-[16px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)] ${
-          isHighLevel ? 'left-[586px] top-[369px]' : 'left-[606px] top-[416px]'
+          isHighLevel
+            ? 'left-[586px] top-[369px] xl:left-[26px] xl:top-[289px]'
+            : 'left-[606px] top-[416px] xl:left-[46px] xl:top-[336px]'
         }`}
         data-node-id={isHighLevel ? '229:11572' : '229:11144'}
         data-name="Card 4.8"
@@ -365,7 +373,9 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
       </div>
       <div
         className={`absolute bg-white border border-[rgba(0,0,0,0.05)] border-solid content-stretch flex gap-[12px] items-center justify-center overflow-clip pl-[14px] pr-[18px] py-[12px] rounded-[16px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)] ${
-          isHighLevel ? 'left-[863px] top-[349px]' : 'left-[880px] top-[403px]'
+          isHighLevel
+            ? 'left-[863px] top-[349px] xl:left-[303px] xl:top-[269px]'
+            : 'left-[880px] top-[403px] xl:left-[320px] xl:top-[323px]'
         }`}
         data-node-id={isHighLevel ? '229:11577' : '229:11149'}
         data-name="Card 12.4k"
@@ -392,7 +402,9 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
       </div>
       <div
         className={`absolute bg-white border border-[rgba(0,0,0,0.05)] border-solid content-stretch flex gap-[12px] items-center justify-center overflow-clip pl-[14px] pr-[18px] py-[12px] rounded-[16px] shadow-[0px_10px_24px_-4px_rgba(0,0,0,0.1)] ${
-          isHighLevel ? 'left-[875px] top-[94px]' : 'left-[874px] top-[100px]'
+          isHighLevel
+            ? 'left-[875px] top-[94px] xl:left-[315px] xl:top-[14px]'
+            : 'left-[874px] top-[100px] xl:left-[314px] xl:top-[20px]'
         }`}
         data-node-id={isHighLevel ? '229:11582' : '229:11154'}
         data-name="Card 18d"
@@ -416,6 +428,8 @@ export default function Hero({ variant = 'custom' }: HeroProps) {
             to launch your app
           </p>
         </div>
+      </div>
+      </div>
       </div>
     </div>
   )

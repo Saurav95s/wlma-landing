@@ -36,7 +36,7 @@ export default function WhyShipYourOwnApp({ variant = "custom" }: WhyShipYourOwn
 
   return (
     <div className="relative size-full" data-node-id="229:11172" data-name="Why Ship Your Own App">
-      <div className="absolute content-stretch flex flex-col gap-[32px] items-start left-0 top-0 w-[1112px]" data-node-id="229:11173">
+      <div className="absolute left-1/2 top-0 flex w-[1112px] -translate-x-1/2 flex-col content-stretch items-start gap-[32px]" data-node-id="229:11173">
         <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="229:11174">
           <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[#10172a] text-[0px] text-center tracking-[-1.12px] w-full" data-node-id="229:11175">
             {isHighLevel ? (
@@ -70,7 +70,7 @@ export default function WhyShipYourOwnApp({ variant = "custom" }: WhyShipYourOwn
                 01
               </p>
               <p className="font-['Inter:Bold',sans-serif] font-bold leading-[30px] not-italic relative shrink-0 text-[24px] text-[color:var(--color\/neutral\/gray\/900,#101828)] tracking-[-0.24px]" data-node-id="229:11179">
-                {isHighLevel ? "Run all your sub-accounts" : "Build Real Brand Authority"}
+                {isHighLevel ? "Run all your sub-accounts" : "Build real brand authority"}
               </p>
             </div>
             <p className="font-['Inter:Regular',sans-serif] font-normal h-[144px] leading-[24px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/neutral\/gray\/700,#344054)] w-[296px]" data-node-id="229:11180">
@@ -105,7 +105,7 @@ export default function WhyShipYourOwnApp({ variant = "custom" }: WhyShipYourOwn
                 02
               </p>
               <p className="font-['Inter:Bold',sans-serif] font-bold leading-[30px] not-italic relative shrink-0 text-[24px] text-[color:var(--color\/neutral\/gray\/900,#101828)] tracking-[-0.24px]" data-node-id="229:11193">
-                {isHighLevel ? "Unified conversations" : "Lock in Client Retention"}
+                {isHighLevel ? "Unified conversations" : "Lock in client retention"}
               </p>
             </div>
             <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/neutral\/gray\/700,#344054)] w-[296px]" data-node-id="229:11194">
@@ -558,7 +558,7 @@ export default function WhyShipYourOwnApp({ variant = "custom" }: WhyShipYourOwn
                 03
               </p>
               <p className="font-['Inter:Bold',sans-serif] font-bold leading-[30px] not-italic relative shrink-0 text-[24px] text-[color:var(--color\/neutral\/gray\/900,#101828)] tracking-[-0.24px]" data-node-id="229:11250">
-                {isHighLevel ? "Ask AI in your pocket" : "Win Every Pitch"}
+                {isHighLevel ? "Ask AI in your pocket" : "Win every pitch"}
               </p>
             </div>
             <p className="font-['Inter:Regular',sans-serif] font-normal h-[144px] leading-[24px] not-italic relative shrink-0 text-[15px] text-[color:var(--color\/neutral\/gray\/700,#344054)] w-[296px]" data-node-id="229:11251">

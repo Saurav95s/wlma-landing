@@ -1,15 +1,15 @@
 export default function LogoCloud() {
   return (
     <div className="relative size-full" data-node-id="229:11294" data-name="Logo Cloud">
-      <div className="absolute bg-[rgba(0,0,0,0.08)] h-px left-0 top-0 w-[1112px]" data-node-id="229:11295" data-name="Rectangle" />
+      <div className="absolute left-1/2 top-0 h-px w-[1112px] -translate-x-1/2 bg-[rgba(0,0,0,0.08)]" data-node-id="229:11295" data-name="Rectangle" />
       <p
-        className="-translate-x-1/2 absolute font-['Inter:Semi_Bold',sans-serif] font-semibold h-[16px] leading-[normal] left-[556px] not-italic text-[#596070] text-[12px] text-center top-[32px] tracking-[0.96px] w-[1112px]"
+        className="absolute left-1/2 top-[32px] h-[16px] w-[1112px] -translate-x-1/2 text-center font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] not-italic text-[#596070] text-[12px] tracking-[0.96px]"
         data-node-id="229:11296"
       >
         AGENCIES SHIPPING THEIR OWN APP
       </p>
       <div
-        className="absolute content-stretch flex font-bold gap-[60px] h-[79px] items-center justify-center leading-[normal] left-0 not-italic overflow-clip top-[80px] w-[1112px] whitespace-nowrap"
+        className="absolute left-1/2 top-[80px] flex h-[79px] w-[1112px] -translate-x-1/2 content-stretch items-center justify-center gap-[60px] overflow-clip whitespace-nowrap font-bold leading-[normal] not-italic"
         data-node-id="229:11297"
         data-name="Logos"
       >
@@ -72,7 +72,7 @@ export default function LogoCloud() {
           </p>
         </div>
       </div>
-      <div className="absolute bg-[rgba(0,0,0,0.08)] h-px left-0 top-[159px] w-[1112px]" data-node-id="229:11313" data-name="Rectangle" />
+      <div className="absolute left-1/2 top-[159px] h-px w-[1112px] -translate-x-1/2 bg-[rgba(0,0,0,0.08)]" data-node-id="229:11313" data-name="Rectangle" />
     </div>
   )
 }
