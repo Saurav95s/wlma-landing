@@ -27,12 +27,12 @@ export default function App() {
                 <ProductTabs activeTab={productTab} onTabChange={setProductTab} />
               </div>
             </div>
-            <div className="@container mx-auto flex w-full max-w-[1112px] flex-col gap-8 @min-[1160px]:max-w-[1280px]">
+            <div className="mx-auto flex w-full max-w-[1112px] flex-col gap-8 lg:max-w-full">
               <div className="min-h-[581px] w-full shrink-0">
                 <Hero variant={productTab} />
               </div>
               <div className="w-full">
-                <div className="mx-auto h-[88px] w-full max-w-[960px]">
+                <div className="mx-auto h-[88px] w-full max-w-[1112px]">
                   <StatsRow variant={productTab} />
                 </div>
               </div>
