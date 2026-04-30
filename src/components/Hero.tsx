@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import type { ProductTabId } from '../productTab'
 
 /** Custom hero — Figma node 229:11102 (WLMA-Q2-26) */
@@ -71,8 +72,10 @@ function CustomHeroFigma() {
         data-node-id="229:11112"
         data-name="CTA Row"
       >
-        <div
-          className="relative flex h-[48px] shrink-0 content-stretch items-center justify-center gap-[8px] overflow-clip rounded-[999px] bg-[#1d2939] py-[8px] pl-[24px] pr-[8px]"
+        <Link
+          to="/pricing"
+          aria-label="Open pricing"
+          className="relative flex h-[48px] shrink-0 cursor-pointer content-stretch items-center justify-center gap-[8px] overflow-clip rounded-[999px] bg-[#1d2939] py-[8px] pl-[24px] pr-[8px] no-underline"
           data-node-id="229:11113"
           data-name="Primary CTA"
         >
@@ -108,7 +111,7 @@ function CustomHeroFigma() {
           <div className="pointer-events-none absolute left-[318.5px] top-0 h-[20px] w-[19px]" data-node-id="331:13039" aria-hidden>
             <img alt="" className="absolute inset-0 block size-full max-w-none" src={imgFrame1597877893} />
           </div>
-        </div>
+        </Link>
         <div
           className="relative flex h-[48px] shrink-0 content-stretch items-center justify-center gap-[12px] overflow-clip rounded-[999px] border border-[rgba(0,0,0,0.08)] border-solid bg-white py-[8px] pl-[8px] pr-[24px]"
           data-node-id="229:11119"
