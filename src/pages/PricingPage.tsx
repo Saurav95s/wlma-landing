@@ -119,16 +119,11 @@ type PlanCardProps = {
   price: string
   ctaVariant: 'outline' | 'primary'
   features: FeatureRow[]
-  highlight?: boolean
 }
 
-function PlanCard({ chip, name, nameClassName, description, price, ctaVariant, features, highlight }: PlanCardProps) {
+function PlanCard({ chip, name, nameClassName, description, price, ctaVariant, features }: PlanCardProps) {
   return (
-    <div
-      className={`flex min-w-0 w-full flex-col gap-[20px] rounded-[24px] border border-[#eaecf0] bg-white p-5 shadow-[0px_4px_12px_0px_rgba(16,24,40,0.04)] sm:p-8 ${
-        highlight ? 'ring-2 ring-[#155eef]/25' : ''
-      }`}
-    >
+    <div className="flex min-w-0 w-full flex-col gap-[20px] rounded-[24px] border border-[#eaecf0] bg-white p-5 shadow-[0px_4px_12px_0px_rgba(16,24,40,0.04)] sm:p-8">
       <div className="flex min-h-9 flex-wrap items-center gap-2">
         {chip}
         <p
@@ -226,7 +221,6 @@ export default function PricingPage() {
             price="$249"
             ctaVariant="primary"
             features={growthFeatures}
-            highlight
           />
           <PlanCard
             chip={
