@@ -171,7 +171,7 @@ export default function PricingPage() {
   return (
     <div className="min-h-full bg-[#f7f8fa]">
       <div className="border-b border-[#eaecf0] bg-white">
-        <div className="mx-auto flex max-w-[1160px] items-center justify-between px-4 py-2">
+        <div className="mx-auto flex w-full max-w-[1160px] items-center justify-start px-6 py-2">
           <Link
             to="/"
             className="flex items-center gap-2 rounded-md text-[#101828] outline-offset-2 hover:bg-[#f2f4f7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#155eef]"
