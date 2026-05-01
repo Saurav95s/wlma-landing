@@ -12,16 +12,15 @@ import {
 
 type FeatureRow =
   | { kind: 'check'; text: string }
-  | { kind: 'check-brand'; text: string }
   | { kind: 'minus'; text: string }
   | { kind: 'ai'; title: string; subtitle: string; accent: 'muted' | 'brand'; sparkleFill?: string }
 
+/** Feature rows aligned with Figma node 367:10891 (WLMA-Q2-26) — Card Starter / Growth / Scale. */
 const starterFeatures: FeatureRow[] = [
   { kind: 'check', text: 'Branding (logo, colors, fonts, app name)' },
-  { kind: 'check', text: 'Top Nav customisation' },
+  { kind: 'check', text: 'Live preview before publish' },
   { kind: 'check', text: 'Published on App Store and Google Play store' },
-  { kind: 'check', text: 'X Builds per month' },
-  { kind: 'minus', text: 'Live preview before publish' },
+  { kind: 'minus', text: 'Top Nav, App Drawer and Bottom navbar customisation' },
   { kind: 'minus', text: 'Sub-account level control' },
   { kind: 'minus', text: 'Custom modules (URL or AI Builder)' },
   { kind: 'minus', text: 'Whitelabel Zap integration' },
@@ -37,10 +36,9 @@ const starterFeatures: FeatureRow[] = [
 
 const growthFeatures: FeatureRow[] = [
   { kind: 'check', text: 'Branding (logo, colors, fonts, app name)' },
-  { kind: 'check', text: 'Top Nav, App Drawer and Bottom navbar customisation' },
-  { kind: 'check', text: 'Published on App Store and Google Play store' },
-  { kind: 'check', text: 'X Builds per month' },
   { kind: 'check', text: 'Live preview before publish' },
+  { kind: 'check', text: 'Published on App Store and Google Play store' },
+  { kind: 'check', text: 'Top Nav, App Drawer and Bottom navbar customisation' },
   { kind: 'minus', text: 'Sub-account level control' },
   { kind: 'minus', text: 'Custom modules (URL or AI Builder)' },
   { kind: 'minus', text: 'Whitelabel Zap integration' },
@@ -56,10 +54,9 @@ const growthFeatures: FeatureRow[] = [
 
 const scaleFeatures: FeatureRow[] = [
   { kind: 'check', text: 'Branding (logo, colors, fonts, app name)' },
-  { kind: 'check', text: 'Top Nav, App Drawer and Bottom navbar customisation' },
-  { kind: 'check', text: 'Published on App Store and Google Play store' },
-  { kind: 'check-brand', text: 'Unlimited Builds per month' },
   { kind: 'check', text: 'Live preview before publish' },
+  { kind: 'check', text: 'Published on App Store and Google Play store' },
+  { kind: 'check', text: 'Top Nav, App Drawer and Bottom navbar customisation' },
   { kind: 'check', text: 'Sub-account level control' },
   { kind: 'check', text: 'Custom modules (URL or AI Builder)' },
   { kind: 'check', text: 'Whitelabel Zap integration' },
@@ -95,7 +92,6 @@ function FeatureList({ rows }: { rows: FeatureRow[] }) {
           )
         }
         const isMinus = row.kind === 'minus'
-        const isBrandCheck = row.kind === 'check-brand'
         return (
           <div key={i} className="flex gap-3">
             <div className="flex size-4 shrink-0 items-start justify-center pt-0.5">
@@ -103,7 +99,7 @@ function FeatureList({ rows }: { rows: FeatureRow[] }) {
             </div>
             <p
               className={`min-w-0 flex-1 font-['Inter:Medium',sans-serif] text-[15px] font-medium leading-5 ${
-                isMinus ? 'text-[#98a2b3]' : isBrandCheck ? 'text-[#6938ef]' : 'text-[#10172a]'
+                isMinus ? 'text-[#98a2b3]' : 'text-[#10172a]'
               }`}
             >
               {row.text}
@@ -129,7 +125,7 @@ type PlanCardProps = {
 function PlanCard({ chip, name, nameClassName, description, price, ctaVariant, features, highlight }: PlanCardProps) {
   return (
     <div
-      className={`flex min-w-0 w-full flex-col gap-5 rounded-[24px] border border-[#eaecf0] bg-white p-5 shadow-[0px_4px_12px_0px_rgba(16,24,40,0.04)] sm:p-8 ${
+      className={`flex min-w-0 w-full flex-col gap-[20px] rounded-[24px] border border-[#eaecf0] bg-white p-5 shadow-[0px_4px_12px_0px_rgba(16,24,40,0.04)] sm:p-8 ${
         highlight ? 'ring-2 ring-[#155eef]/25' : ''
       }`}
     >
@@ -248,8 +244,7 @@ export default function PricingPage() {
         </div>
 
         <p className="mx-auto mt-16 max-w-[810px] text-center font-['Inter:Italic',sans-serif] text-[16px] font-normal italic leading-6 text-[#596070]">
-          All plans billed monthly. Cancel anytime. App store developer fees ($99/yr Apple, $25 one-time Google) are not
-          included.
+          All plans billed monthly. Cancel anytime. App store developer fees ($99/yr Apple, $25 one-time Google) are not included.
         </p>
 
         <div className="mx-auto mt-10 flex w-full max-w-[1112px] flex-col gap-0 overflow-hidden rounded-2xl md:flex-row">
